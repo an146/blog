@@ -3,7 +3,7 @@
 
 AUTHOR = u"an146"
 SITENAME = u"an146.github.com"
-SITEURL = '/'
+SITEURL = 'http://an146.github.com'
 
 TIMEZONE = 'Europe/Paris'
 
