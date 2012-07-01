@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>an146.github.com</title><link href="http://an146.github.com/" rel="alternate"></link><link href="http://an146.github.com/feeds/all.atom.xml" rel="self"></link><id>http://an146.github.com/</id><updated>2010-12-03T00:00:00+01:00</updated><entry><title>Turn off PulseAudio</title><link href="http://an146.github.com/turn-off-pulseaudio.html" rel="alternate"></link><updated>2010-12-03T00:00:00+01:00</updated><author><name>an146</name></author><id>tag:an146.github.com,2010-12-03:turn-off-pulseaudio.html</id><summary type="html">&lt;p&gt;Sometimes it happens that you want to get rid of PulseAudio daemon.
+Because of complicated GNOME mechanics, simple &lt;code&gt;pulseaudio --kill&lt;/code&gt; doesn't
+work, as it gets restarted again. So actually you have to use
+&lt;code&gt;pacmd suspend true&lt;/code&gt; and &lt;code&gt;pacmd suspend false&lt;/code&gt; for this purpose. Pulse daemon
+doesn't die, but it suspends all audio and releases the hardware.
+More user-friendliness is good, so I wrote
+&lt;a href="https://extensions.gnome.org/extension/375/turn-off-pulseaudio/"&gt;this little GNOME panel extension&lt;/a&gt;.&lt;/p&gt;</summary><category term="linuxaudio"></category></entry></feed>
