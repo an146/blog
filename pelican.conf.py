@@ -6,6 +6,7 @@ SITENAME = u"an146.github.com"
 SITEURL = 'http://an146.github.com'
 
 TIMEZONE = 'Europe/Paris'
+GOOGLE_ANALYTICS = 'UA-33073106-1'
 
 DEFAULT_LANG='en'
 

@@ -49,8 +49,12 @@ ftp_upload: $(OUTPUTDIR)/index.html
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUT_DIR)/* $(FTP_TARGET_DIR) ; quit"
 
 github: $(OUTPUTDIR)/index.html
-	ghp-import $(OUTPUTDIR)
-	git push origin gh-pages
+	cd $(OUTPUTDIR)
+	-git init && git remote add origin git@github.com:an146/blog.git
+	-git co -b gh-pages
+	git add .
+	-git ci -m 'update'
+	git push origin +gh-pages
 
 .PHONY: html help clean ftp_upload ssh_upload dropbox_upload github
     
