@@ -5,6 +5,9 @@ AUTHOR = u"an146"
 SITENAME = u"an146.github.com"
 SITEURL = 'http://an146.github.com'
 
+ARTICLE_URL = '{date:%Y}/{date:%b}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
+
 TIMEZONE = 'Europe/Paris'
 GOOGLE_ANALYTICS = 'UA-33073106-1'
 
