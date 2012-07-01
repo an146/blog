@@ -101,6 +101,7 @@ dt {font-weight: bold;}
 dd {margin-left: 1.5em;}
 
 pre{background-color: #000; padding: 10px; color: #fff; margin: 10px; overflow: auto;}
+code{border: 1px solid #888; background-color: #ddd; color: #000; padding: 2px; margin: 5px; overflow: auto;}
 
 /* Quotes */
 blockquote {
