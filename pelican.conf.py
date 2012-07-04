@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = u"anton"
-SITENAME = u"ebanat.org/blog"
+SITENAME = u"ebanat.org/blog/"
 SITEURL = 'http://ebanat.org/blog'
 
 ARTICLE_URL = '{date:%Y}/{date:%b}/{date:%d}/{slug}/'
