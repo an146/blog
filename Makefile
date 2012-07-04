@@ -17,6 +17,10 @@ SSH_TARGET_DIR=/var/www
 
 DROPBOX_DIR=~/Dropbox/Public/
 
+update:
+	git ci -a -m update
+	$(MAKE) html github
+
 help:
 	@echo 'Makefile for a pelican Web site                                       '
 	@echo '                                                                      '
@@ -49,7 +53,6 @@ ftp_upload: $(OUTPUTDIR)/index.html
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUT_DIR)/* $(FTP_TARGET_DIR) ; quit"
 
 github: $(OUTPUTDIR)/index.html
-	cp CNAME $(OUTPUTDIR)
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
 
