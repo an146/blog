@@ -14,9 +14,9 @@ GOOGLE_ANALYTICS = 'UA-33073106-1'
 DEFAULT_LANG='en'
 
 # Blogroll
-LINKS =  (
-    ('ebanat.org', 'http://ebanat.org'),
-         )
+#LINKS =  (
+#    ('ebanat.org', 'http://ebanat.org'),
+#         )
 
 # Social widget
 #SOCIAL = (
