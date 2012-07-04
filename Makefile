@@ -49,6 +49,7 @@ ftp_upload: $(OUTPUTDIR)/index.html
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUT_DIR)/* $(FTP_TARGET_DIR) ; quit"
 
 github: $(OUTPUTDIR)/index.html
+	cp CNAME $(OUTPUTDIR)
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
 
